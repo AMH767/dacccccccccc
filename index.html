@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head><script>window.huggingface={variables:{"SPACE_CREATOR_USER_ID":"67cf176c949c504dd20cffc1"}};</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DACeramic Studio - Гончарная студия</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="3.4.17"></script>
+    <script src="npm/feather-icons/dist/feather.min.js"></script>
+    <script src="feather-icons%404.29.2/dist/feather.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clay: {
+                100: '#f5e9e1',
+                200: '#e8d5c9',
+                300: '#d9c1b0',
+                400: '#c9a993',
+                500: '#b58f76',
+                600: '#9e7a61',
+                700: '#85654d',
+                800: '#6b513a',
+                900: '#513d28',
+              }
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-clay-100 font-sans">
+    <custom-navbar></custom-navbar>
+    
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-clay-200 overflow-hidden">
+      <div class="absolute inset-0 bg-[url('http://static.photos/craft/1200x630/42')] bg-cover bg-center opacity-30"></div>
+      <div class="container mx-auto px-6 relative z-10 text-center">
+        <h1 class="text-5xl md:text-7xl font-bold text-clay-800 mb-6">DACeramic Studio</h1>
+        <p class="text-xl md:text-2xl text-clay-700 max-w-2xl mx-auto mb-8">Где земля встречается с искусством. Создавайте уникальные керамические изделия в нашей уютной студии.</p>
+        <a href="#classes" class="bg-clay-600 hover:bg-clay-700 text-white font-bold py-3 px-8 rounded-full transition duration-300 inline-flex items-center">
+          Записаться на занятие <i data-feather="arrow-right" class="ml-2"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- About Studio Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <h2 class="text-4xl font-bold text-clay-800 mb-6">О нашей студии</h2>
+            <p class="text-lg text-gray-700 mb-6">ClayCraft Studio — это пространство, где каждый может открыть для себя искусство керамики. Мы верим, что работа с глиной — это медитативный процесс, который позволяет соединиться с природными материалами и создать что-то по-настоящему уникальное.</p>
+            <p class="text-lg text-gray-700">Наша философия основана на уважении к традиционным техникам и постоянном поиске новых форм выражения. Мы стремимся создать атмосферу, в которой творчество становится естественным продолжением личности.</p>
+          </div>
+          <div class="md:w-1/2 bg-clay-200 h-96 rounded-lg overflow-hidden">
+            <div class="h-full bg-[url('http://static.photos/workspace/1024x576/23')] bg-cover bg-center"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="py-20 bg-clay-100">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-clay-800 mb-12 text-center">Наши работы</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Item 1 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+            <div class="h-64 bg-[url('http://static.photos/minimal/640x360/1')] bg-cover bg-center"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-clay-800 mb-2">Керамическая чаша</h3>
+              <p class="text-gray-600 mb-4">Ручная работа, глазурь с эффектом кракелюра</p>
+              <p class="text-clay-600 font-bold">2500 ₽</p>
+            </div>
+          </div>
+          
+          <!-- Item 2 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+            <div class="h-64 bg-[url('http://static.photos/minimal/640x360/2')] bg-cover bg-center"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-clay-800 mb-2">Набор кружек</h3>
+              <p class="text-gray-600 mb-4">Комплект из 2 кружек, ручная роспись</p>
+              <p class="text-clay-600 font-bold">3900 ₽</p>
+            </div>
+          </div>
+          
+          <!-- Item 3 -->
+          <div class="bg-white rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105">
+            <div class="h-64 bg-[url('http://static.photos/minimal/640x360/3')] bg-cover bg-center"></div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold text-clay-800 mb-2">Декоративная ваза</h3>
+              <p class="text-gray-600 mb-4">Высота 35 см, фактурная поверхность</p>
+              <p class="text-clay-600 font-bold">4500 ₽</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Classes Section -->
+    <section id="classes" class="py-20 bg-white">
+      <div class="container mx-auto px-6">
+        <h2 class="text-4xl font-bold text-clay-800 mb-12 text-center">Мастер-классы</h2>
+        <div class="max-w-3xl mx-auto bg-clay-50 rounded-xl p-8 shadow-md">
+          <h3 class="text-2xl font-bold text-clay-800 mb-6">Записаться на занятие</h3>
+          <form id="booking-form" class="space-y-6">
+            <div>
+              <label for="name" class="block text-gray-700 mb-2">Ваше имя</label>
+              <input type="text" id="name" required="" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500">
+            </div>
+            <div>
+              <label for="phone" class="block text-gray-700 mb-2">Телефон</label>
+              <input type="tel" id="phone" required="" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500">
+            </div>
+            <div>
+              <label for="email" class="block text-gray-700 mb-2">Email</label>
+              <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500">
+            </div>
+            <div>
+              <label for="date" class="block text-gray-700 mb-2">Дата занятия</label>
+              <input type="date" id="date" required="" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500">
+            </div>
+            <div>
+              <label for="class-type" class="block text-gray-700 mb-2">Тип занятия</label>
+              <select id="class-type" required="" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500">
+                <option value="">Выберите тип занятия</option>
+                <option value="Основы гончарного дела (для начинающих)">Основы гончарного дела (для начинающих)</option>
+                <option value="Продвинутые техники">Продвинутые техники</option>
+                <option value="Мастер-класс по росписи">Мастер-класс по росписи</option>
+                <option value="Индивидуальное занятие">Индивидуальное занятие</option>
+              </select>
+            </div>
+            <div>
+              <label for="message" class="block text-gray-700 mb-2">Ваши пожелания</label>
+              <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-clay-500"></textarea>
+            </div>
+            <button type="submit" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-bold py-3 px-4 rounded-lg transition duration-300">
+              Отправить заявку
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-clay-800 text-white">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <h2 class="text-4xl font-bold mb-6">Контакты</h2>
+            <div class="space-y-4">
+              <div class="flex items-start">
+                <i data-feather="map-pin" class="mr-4 mt-1"></i>
+                <p>ул. Гончарная, 15, Москва, Россия</p>
+              </div>
+              <div class="flex items-start">
+                <i data-feather="phone" class="mr-4 mt-1"></i>
+                <p>+7 (495) 123-45-67</p>
+              </div>
+              <div class="flex items-start">
+                <i data-feather="mail" class="mr-4 mt-1"></i>
+                <p>info@claycraftstudio.ru</p>
+              </div>
+              <div class="flex items-start">
+                <i data-feather="clock" class="mr-4 mt-1"></i>
+                <p>Пн-Пт: 10:00 - 20:00<br>Сб-Вс: 11:00 - 18:00</p>
+              </div>
+            </div>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-white rounded-lg overflow-hidden h-96">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2245.3723701078334!2d37.61763331593118!3d55.75582698055346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54a5a738fa419%3A0x7c347d506f52311f!2z0JrRgNCw0YHQvdCw0Y8g0JPQvtGB0YPQtNCw0YDRgdGC0LLQtdC90L3QvtC5INC-0LHQuy4sIDE1LCDQnNC-0YHQutCy0LAsINCg0L7RgdGB0LjRjywgMTA3MDMx!5e0!3m2!1sru!2s!4v1623835200000!5m2!1sru!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <custom-footer></custom-footer>
+    
+    <script src="components/navbar.js"></script>
+    <script src="components/footer.js"></script>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+      
+      document.getElementById('booking-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = {
+          name: document.getElementById('name').value,
+          phone: document.getElementById('phone').value,
+          email: document.getElementById('email').value,
+          date: document.getElementById('date').value,
+          classType: document.getElementById('class-type').value,
+          message: document.getElementById('message').value
+        };
+        
+        const botToken = '8090382627:AAFxrnD0w7ofS5-cneVWF-vDuAcacUFSvjQ';
+        const chatId = '914022105';
+        const text = `🎨 Новая заявка в DACeramic Studio! 🏺
+
+👤 Клиент: ${formData.name}
+📞 Телефон: ${formData.phone}
+📧 Email: ${formData.email || 'Не указан'}
+📅 Дата занятия: ${formData.date}
+🏆 Тип занятия: ${formData.classType}
+✏️ Пожелания: ${formData.message || 'Не указаны'}
+
+⏳ Время заявки: ${new Date().toLocaleString()}
+🔔 Срочно связаться!`;
+fetch(`https://api.telegram.org/bot${botToken}/sendMessage`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            chat_id: chatId,
+            text: text
+          })
+        })
+        .then(response => response.json())
+        .then(data => {
+          alert('Ваша заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
+          document.getElementById('booking-form').reset();
+        })
+        .catch(error => {
+          console.error('Error:', error);
+          alert('Произошла ошибка при отправке заявки. Пожалуйста, попробуйте позже.');
+        });
+      });
+    </script>
+<script src="deepsite/deepsite-badge.js"></script>
+</body>
+</html>
