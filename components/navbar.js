@@ -89,7 +89,7 @@ class CustomNavbar extends HTMLElement {
       </style>
       <nav>
         <a href="/" class="logo">
-          <i data-feather="compass" class="logo-icon"></i> ClayCraft
+          <i data-feather="compass" class="logo-icon"></i> DACeramic
         </a>
         <button class="nav-button" id="menu-toggle">
           <i data-feather="menu"></i>
