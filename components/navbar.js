@@ -35,6 +35,7 @@ class CustomNavbar extends HTMLElement {
           list-style: none;
           margin: 0;
           padding: 0;
+          margin-right: 70px;
         }
         a {
           color: #6b513a;
